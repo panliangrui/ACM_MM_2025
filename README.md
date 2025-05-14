@@ -60,7 +60,7 @@ Use the pre-trained model for feature preprocessing and build the spatial topolo
 
 ### Feature Extraction
 
-The original WSI needs permission from the Second Xiangya Hospital to be used. If WSI is used for commercial purposes, the dataset will be protected by law. We support the following 21 pre-trained foundation models to extract the feature representation of WSI. Please contact us by email before using. (Highly recommended!!)
+The original WSI needs permission from the Third Xiangya Hospital to be used. If WSI is used for commercial purposes, the dataset will be protected by law. We support the following 21 pre-trained foundation models to extract the feature representation of WSI. Please contact us by email before using. (Highly recommended!!)
 
 | Patch Encoder         | Embedding Dim | Args                                                             | Link |
 |-----------------------|---------------:|------------------------------------------------------------------|------|
@@ -83,35 +83,8 @@ The original WSI needs permission from the Second Xiangya Hospital to be used. I
 | **CTransPath-CHIEF**  | 768            | `--patch_encoder ctranspath --patch_size 256 --mag 10`           | — |
 | **ResNet50**          | 1024           | `--patch_encoder resnet50 --patch_size 256 --mag 20`             | — |
 
+For the related feature extraction process, please refer to: https://github.com/mahmoodlab/TRIDENT.
 
-
-For the .h5 file with multi-scale features in the multi_graph_1 folder (for example: 1479844-3-HE.h5), the process code as follows:
-```markdown
-```python
-with h5py.File(./gene/csu/multi_graph_1/1479844-3-HE.h5, 'r') as hf:
-    # obtain x_img_256 and the related edge
-    x_img_256 = hf['x_img_256'][:]
-    x_img_256_edge = hf['x_img_256_edge'][:]
-
-    # obtain x_img_512 and the related edge
-    x_img_512 = hf['x_img_512'][:]
-    x_img_512_edge = hf['x_img_512_edge'][:]
-
-    # obtain x_img_1024 and the related edge
-    x_img_1024 = hf['x_img_1024'][:]
-    x_img_1024_edge = hf['x_img_1024_edge'][:]
-```
-
-For the .h5 file with TME features in the TME folder (for example: 1479844-3-HE_graph.h5), the process code as follows:
-```markdown
-```python
-with h5py.File(./gene/csu/TME/1479844-3-HE_graph.h5, 'r') as hf:
-    # obtain node_features
-    node_features = hf['node_features'][:]
-
-    # obtain edges
-    edges = hf['edges'][:]
-```
 
 
 **Baseline MIL Methods**
@@ -147,9 +120,9 @@ python clam.py
 
 - **Only features of the histopathology image data are provided as the data has a privacy protection agreement.**
 ```markdown
-link: https://pan.baidu.com/s/1zpt7D_XNgqZpLnUyOmtkgA?pwd=8yn6 password: 8yn6
+link: https://pan.baidu.com/s/1-V1Zb1YJ65wb4Fhh7SJbkw?pwd=4xep password: 4xep
 ```
-- **We provide a permanent link to the raw data at [https://huggingface.co/datasets/LiangruiPan/PathGene-CSU\_svs](https://huggingface.co/datasets/LiangruiPan/PathGene-CSU_svs), but we strongly recommend using the preprocessed WSI features.**
+- **We provide a permanent link to the raw data at https://pan.baidu.com/s/14NAjUSu78OKQHPEWz082lA?pwd=5gux, but we strongly recommend using the preprocessed WSI features.**
 
 - **We provide raw NGS data on PathGene. The datasets_csv folder contains the labels corresponding to the driver genes we processed and can be used directly. The original NGS requires permission. Please contact the corresponding author (slpeng@hnu.edu.cn) or first author (panlr@hnu.edu.cn) by email!!**
 - **PathGene-CSU:** The PathGene‐CSU cohort comprises 1,576 lung cancer patients, predominantly diagnosed with adenocarcinoma or adenosquamous carcinoma (For related content, please refer to Table 8 in the appendix of this article.). All cases underwent NGS, yielding per‐patient labels for driver‐gene mutation status, mutation subtypes, and exon‐level variant locations. We focus on five prediction tasks (For related content, please refer to Table 9 in the appendix of this article): (1) binary mutation status (presence/absence) for TP53, EGFR, KRAS, and ALK; (2) TP53 mutation subtype (wild‐type, nonsense, missense); (3) TP53 exon hotspots (EX5, EX6, EX7, EX8, other) based on functional‐domain distribution; (4) EGFR exon variants (EX19, EX20, EX21), chosen for their mutation frequency, TKI sensitivity, and clinical response differences; and (5) binary TMB status (high/low; 9 mut/Mb cutoff). For KRAS, we consolidate EX3 and rarer exons into an “other” category due to low sample counts. ALK subtypes are divided into EML4–ALK fusions and non‐fusion point mutations, reflecting the availability of fusion‐targeted therapies.
