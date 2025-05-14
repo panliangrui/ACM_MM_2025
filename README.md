@@ -36,7 +36,7 @@
   </div>
 </div>
 
-# PathGene: A benchmark for predicting driver gene mutations and exons based on a multicenter lung cancer histopathology image dataset
+# DLiPath: A Benchmark for the Comprehensive Evaluation of Graft Livers Based on Histopathological Image Datasets
 
 ## Table of Contents
 
