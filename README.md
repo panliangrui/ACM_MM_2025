@@ -1,8 +1,8 @@
 
 
 <div align="center">
-  <a href="(https://github.com/panliangrui/NIPS2025/blob/main/liucheng.png)">
-    <img src="https://github.com/panliangrui/NIPS2025/blob/main/liucheng.png" width="800" height="400" />
+  <a href="(https://github.com/panliangrui/ACM_MM_2025/blob/main/liver.jpg)">
+    <img src="https://github.com/panliangrui/ACM_MM_2025/blob/main/liver.jpg" width="800" height="400" />
   </a>
 
   <h1>PathGene(NGS, Histopathology images)</h1>
