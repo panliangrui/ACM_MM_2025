@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="(https://github.com/panliangrui/ACM_MM_2025/blob/main/liver.jpg)">
-    <img src="https://github.com/panliangrui/ACM_MM_2025/blob/main/liver.jpg" width="1200" height="400" />
+    <img src="https://github.com/panliangrui/ACM_MM_2025/blob/main/liver.jpg" width="1200" height="300" />
   </a>
 
   <h1>PathGene(NGS, Histopathology images)</h1>
