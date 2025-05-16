@@ -9,7 +9,7 @@
   Six pathological indicators for liver donor evaluation.
 
   <p>
-  Anonymous Author et al. is a developer helper.
+  Liangrui Pan et al. is a developer helper.
   </p>
 
   <p>
@@ -36,7 +36,7 @@
   </div>
 </div>
 
-# DLiPath: A Benchmark for the Comprehensive Evaluation of Graft Livers Based on Histopathological Image Datasets
+# DLiPath: A Benchmark for the Comprehensive Evaluation of Donor Liver Based on Histopathological Image Datasets
 
 ## Table of Contents
 
