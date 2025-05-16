@@ -5,8 +5,8 @@
     <img src="https://github.com/panliangrui/ACM_MM_2025/blob/main/liver.jpg" width="1200" height="250" />
   </a>
 
-  <h1>PathGene(NGS, Histopathology images)</h1>
-  Flowchart of the collection and preprocessing of lung cancer patients’ histopathology images and NGS data.
+  <h1>DLiPath(Histopathology images)</h1>
+  Six pathological indicators for liver donor evaluation.
 
   <p>
   Anonymous Author et al. is a developer helper.
