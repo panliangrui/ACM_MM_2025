@@ -6,7 +6,7 @@
   </a>
 
   <h1>DLiPath(Histopathology images)</h1>
-  Six pathological indicators for liver donor evaluation.
+  Six pathological indicators for liver donor assessment.
 
   <p>
   Liangrui Pan et al. is a developer helper.
