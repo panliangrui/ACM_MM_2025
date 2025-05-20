@@ -120,15 +120,43 @@ python clam.py
 
 - **Only features of the histopathology image data are provided as the data has a privacy protection agreement.**
 ```markdown
-link: https://pan.baidu.com/s/1-V1Zb1YJ65wb4Fhh7SJbkw?pwd=4xep password: 4xep
+
+link：https://pan.baidu.com/s/115tVCSwUjrZm5y_rBND5NQ?pwd=v9kq 
+password：v9kq
+
+link：https://pan.baidu.com/s/14xl48HY933k4JGdYR-RoVw?pwd=v9kq 
+password：v9kq
+
+link：https://pan.baidu.com/s/10kXNJdIW3toFQG7dTdYxZg?pwd=v9kq 
+password：v9kq
+
 ```
-- **We provide a permanent link to the raw data at https://pan.baidu.com/s/14NAjUSu78OKQHPEWz082lA?pwd=5gux, but we strongly recommend using the preprocessed WSI features.**
+- **We provide a permanent link to the raw data at  https://pan.baidu.com/s/1cVYwHXsUCmEUw2LRRwUcRg?pwd=3rac, but we strongly recommend using the preprocessed WSI features.**
 
-- **We provide raw NGS data on PathGene. The datasets_csv folder contains the labels corresponding to the driver genes we processed and can be used directly. The original NGS requires permission. Please contact the corresponding author (slpeng@hnu.edu.cn) or first author (panlr@hnu.edu.cn) by email!!**
-- **PathGene-CSU:** The PathGene‐CSU cohort comprises 1,576 lung cancer patients, predominantly diagnosed with adenocarcinoma or adenosquamous carcinoma (For related content, please refer to Table 8 in the appendix of this article.). All cases underwent NGS, yielding per‐patient labels for driver‐gene mutation status, mutation subtypes, and exon‐level variant locations. We focus on five prediction tasks (For related content, please refer to Table 9 in the appendix of this article): (1) binary mutation status (presence/absence) for TP53, EGFR, KRAS, and ALK; (2) TP53 mutation subtype (wild‐type, nonsense, missense); (3) TP53 exon hotspots (EX5, EX6, EX7, EX8, other) based on functional‐domain distribution; (4) EGFR exon variants (EX19, EX20, EX21), chosen for their mutation frequency, TKI sensitivity, and clinical response differences; and (5) binary TMB status (high/low; 9 mut/Mb cutoff). For KRAS, we consolidate EX3 and rarer exons into an “other” category due to low sample counts. ALK subtypes are divided into EML4–ALK fusions and non‐fusion point mutations, reflecting the availability of fusion‐targeted therapies.
+- **We provide raw svs data on DLiPath. The original data requires permission. Please contact the corresponding author (slpeng@hnu.edu.cn) or first author (panlr@hnu.edu.cn) by email!!**
+- **DLiPath:** The main indicators of donor liver histopathological assessment include cholestasis, portal tract fibrosis, portal inflammation, total steatosis, macrovesicular steatosis, and hepatocellular ballooning. Multiple pathologists will score the histopathology images based on their years of diagnostic experience; if two junior pathologists agree on a score, that label is assigned. If their scores differ, a senior pathologist is consulted to make the final determination. Each indicator is graded on a multiple point scale: none, mild, moderate, and severe. The scoring criteria for these indicators are listed in the table below.
 
-- **PathGene-TCGA_LUAD:** This dataset includes 510 WSIs from 448 TCGA lung adenocarcinoma cases. Multiple sections from the same tumor share identical NGS profiles. We retrieved driver‐gene labels from cBioPortal and define mutation status as 0/1 and TMB status (high/low) at a 10 mut/Mb threshold. TP53 subtypes were reclassified by pathologists as wild type/nonsense mutation/missense mutation. Exon‐level prediction was not evaluated here owing to insufficient per‐exon sample sizes (total counts: 296, 75, 29, 48).
+**Table: Histopathological Assessment Indicators for Post‑mortem Donor Liver Biopsy**
 
+| Indicator                  | None | Mild                  | Moderate             | Severe         |
+|----------------------------|:----:|:---------------------:|:--------------------:|:--------------:|
+| Cholestasis                | None | Mild (5%–30%)         | Moderate (30%–50%)   | Severe (>50%)  |
+| Portal tract fibrosis      | None | Mild                  | Moderate             | Severe         |
+| Portal inflammation        | None | Mild                  | Moderate             | Severe         |
+| Overall steatosis          | None | Mild (5%–30%)         | Moderate (30%–60%)   | Severe (>60%)  |
+| Macrovesicular steatosis   | None | Mild (5%–30%)         | Moderate (30%–60%)   | Severe (>60%)  |
+| Hepatocellular ballooning  | None | Mild (5%–30%)         | Moderate (30%–60%)   | Severe (>60%)  |
+
+**Table: Label Distribution for Donor Liver Histopathology Assessment**
+
+| Histological Feature            | **0** | **1** | **2** | **3** |
+|---------------------------------|:-----:|:-----:|:-----:|:-----:|
+| Cholestasis                     | 131   | 128   | 2     | 0     |
+| Portal tract fibrosis           | 187   | 76    | 0     | 0     |
+| Portal inflammation             | 233   | 29    | 1     | 0     |
+| Total steatosis                 | 160   | 93    | 10    | 0     |
+| Macrovesicular steatosis        | 184   | 66    | 12    | 1     |
+| Hepatocellular ballooning       | 3     | 45    | 133   | 81    |
 
 ## Installation
 - Linux (Tested on Ubuntu 18.04)
