@@ -131,7 +131,7 @@ link：https://pan.baidu.com/s/10kXNJdIW3toFQG7dTdYxZg?pwd=v9kq
 password：v9kq
 
 ```
-- **We provide a permanent link to the raw data at  https://pan.baidu.com/s/1cVYwHXsUCmEUw2LRRwUcRg, but we strongly recommend using the preprocessed WSI features.**
+- **We strongly recommend using the preprocessed WSI features.**
 
 - **We provide raw svs data on DLiPath. The original data requires permission. Please contact the corresponding author (slpeng@hnu.edu.cn) or first author (panlr@hnu.edu.cn) by email!!**
 - **DLiPath:** The main indicators of donor liver histopathological assessment include cholestasis, portal tract fibrosis, portal inflammation, total steatosis, macrovesicular steatosis, and hepatocellular ballooning. Multiple pathologists will score the histopathology images based on their years of diagnostic experience; if two junior pathologists agree on a score, that label is assigned. If their scores differ, a senior pathologist is consulted to make the final determination. Each indicator is graded on a multiple point scale: none, mild, moderate, and severe. The scoring criteria for these indicators are listed in the table below.
