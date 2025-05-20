@@ -91,23 +91,23 @@ For the related feature extraction process, please refer to: https://github.com/
 
 This repository provides implementations and comparisons of various MIL-based methods for Whole Slide Image (WSI) classification.
 
-- **ABMIL** is a deep multiple instance learning framework that employs an attention mechanism to aggregate instance-level features within a bag. By projecting instances into a low-dimensional feature space and applying a gated attention mechanism, ABMIL assigns dynamic weights to each instance, facilitating permutation-invariant aggregation. This approach enables end-to-end training for bag-level classification tasks, such as tumor grading, and provides interpretability by highlighting the contribution of individual instances to the overall prediction.
+- **ABMIL** : "https://github.com/AMLab-Amsterdam/AttentionDeepMIL"
 
-- **CLAM-SB** is a simplified variant of the CLAM framework, tailored for binary classification tasks. It utilizes a single attention branch to aggregate instance features, focusing on regions with high attention scores as evidence for the positive class. The model incorporates a combination of slide-level classification loss and instance-level clustering loss, enabling end-to-end training and enhancing the model's ability to distinguish between tumor and normal tissue.
+- **CLAM-SB** : "https://github.com/mahmoodlab/CLAM"
   
-- **CLAM-MB** extends the CLAM framework to handle multi-class classification tasks by employing multiple attention branches, each corresponding to a specific class. During training, the model generates pseudo-labels for each branch and applies clustering constraints to enforce class-specific feature learning. This design allows CLAM-MB to perform end-to-end bag-level classification while providing interpretable localization of class-relevant regions within whole-slide images.
+- **CLAM-MB** : "https://github.com/mahmoodlab/CLAM"
 
-- **ACMIL** is a multiple instance learning model designed to address the overfitting problem caused by excessive attention concentration in whole-slide image classification. Through UMAP and Top-K attention value statistical analysis, ACMIL introduces two innovative techniques into the ABMIL framework: Multiple Branch Attention (MBA) and Stochastic Top-K Instance Masking (STKIM). These techniques compel the model to focus on more predictive instances and alleviate attention concentration, significantly enhancing the model's generalization and robustness.
+- **ACMIL** : "https://github.com/dazhangyu123/ACMIL"
 
-- **DSMIL** is a dual-stream attention-based multiple instance learning model. The first stream employs max pooling to select the most representative instance. The second stream calculates self-attention weights for all instances in the bag based on the selected instance and aggregates them. The model jointly learns an instance classifier and a bag classifier within the same embedding space, enabling end-to-end optimization.
+- **DSMIL** : "https://github.com/binli123/dsmil-wsi"
   
-- **IBMIL** introduces the "backdoor adjustment" strategy from causal inference into the MIL framework to achieve deconfounding of bag-level contextual prior biases. This approach enhances the robustness and generalization capability of bag-level classification by mitigating spurious correlations between bags and labels. IBMIL is orthogonal to existing MIL methods, allowing it to be integrated with various architectures to consistently improve performance.
+- **IBMIL** : "https://github.com/HHHedo/IBMIL"
   
-- **DGRMIL** is a novel MIL aggregation method that models the diversity of instances within a bag through a set of learnable global vectors. It utilizes a cross-attention mechanism to measure the similarity between instance embeddings and global vectors, replacing traditional strategies that focus on instance correlations. The model further introduces a positive instance alignment module and a diversification learning paradigm based on determinantal point processes to enhance the global vectors' descriptive ability for the entire bag.
+- **DGRMIL** : "https://github.com/ChongQingNoSubway/DGR-MIL"
   
-- **ILRA-MIL** is a specialized MIL model for whole slide images (WSIs) in pathology. It first employs Low-Rank Contrastive (LRC) learning to generate embeddings for specific pathological tissues. Subsequently, it introduces learnable low-rank latent vectors into a standard Transformer aggregation module, enabling iterative global interaction modeling among instances within a bag. This design captures the low-rank structure inherent in WSIs, facilitating more effective representation learning.
+- **ILRA-MIL** : "https://github.com/ChongQingNoSubway/DGR-MIL"
 
-- **TransMIL** addresses the limitations of traditional MIL methods that assume independent and identically distributed (i.i.d.) instances by modeling correlations among instances within a bag. It segments WSIs into patches (instances), extracts features, and incorporates positional encoding before feeding them into multi-head self-attention Transformer layers. This architecture captures both morphological and spatial information. To mitigate the impact of noisy pixel-level annotations, TransMIL employs an efficient random masking strategy during mixed supervision training, enhancing the model's robustness to label noise. Experiments demonstrate that TransMIL achieves superior performance and faster convergence compared to state-of-the-art methods on datasets like CAMELYON16, TCGA-NSCLC, and TCGA-RCC.
+- **TransMIL** : "https://github.com/szc19990412/TransMIL"
 
 
 ## Train Models
