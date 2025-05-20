@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="(https://github.com/panliangrui/ACM_MM_2025/blob/main/liver.jpg)">
-    <img src="https://github.com/panliangrui/ACM_MM_2025/blob/main/liver.jpg" width="1200" height="250" />
+    <img src="https://github.com/panliangrui/ACM_MM_2025/blob/main/liver.jpg" width="1200" height="200" />
   </a>
 
   <h1>DLiPath(Histopathology images)</h1>
